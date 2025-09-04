@@ -36,7 +36,7 @@ export default function Contact() {
             {t("contact.hero.title")}
           </h1>
           <p
-            className="text-xl text-white animate-fade-in-up"
+            className="text-xl text-white animate-fade-in-up arabic-text"
             style={{ animationDelay: "0.2s" }}
           >
             {t("contact.hero.subtitle")}
@@ -51,7 +51,7 @@ export default function Contact() {
             {/* Contact Information */}
             <Card className="shadow-lg">
               <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-emdad-navy mb-6 text-center">
+                <h3 className="text-xl font-bold text-emdad-navy mb-6 text-center arabic-text">
                   {t("contact.info.title")}
                 </h3>
 
@@ -105,11 +105,11 @@ export default function Contact() {
             {/* Business Hours */}
             <Card className="shadow-lg">
               <CardContent className="p-8">
-                <h3 className="text-xl font-bold text-emdad-navy mb-6">
+                <h3 className="text-xl font-bold text-emdad-navy mb-6 arabic-text">
                   <Clock className="w-6 h-6 text-emdad-gold inline mr-2" />
                   {t("contact.hours.title")}
                 </h3>
-                <div className="space-y-2 text-gray-700">
+                <div className="space-y-2 text-gray-700 arabic-text">
                   <p>{t("contact.hours.weekdays")}</p>
                 </div>
               </CardContent>
@@ -124,7 +124,7 @@ export default function Contact() {
           <div className="max-w-4xl mx-auto">
             <Card className="shadow-lg">
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-emdad-navy mb-6 text-center">
+                <h2 className="text-2xl font-bold text-emdad-navy mb-6 text-center arabic-text">
                   <MapPin className="w-6 h-6 text-emdad-gold inline mr-2" />
                   {t("contact.location.title")}
                 </h2>

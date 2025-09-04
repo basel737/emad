@@ -24,7 +24,7 @@ export function WhatWeRepresentSection() {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-emdad-navy text-center mb-16 animate-fade-in-up">
+          <h2 className="text-4xl md:text-5xl font-bold text-emdad-navy text-center mb-16 animate-fade-in-up arabic-text">
             {t('represent.title')}
           </h2>
           
@@ -41,11 +41,11 @@ export function WhatWeRepresentSection() {
                     <IconComponent className="text-white" size={32} />
                   </div>
                   
-                  <h3 className="text-2xl font-bold text-emdad-navy mb-4">
+                  <h3 className="text-2xl font-bold text-emdad-navy mb-4 arabic-text">
                     {t(`represent.${item.key}.title`)}
                   </h3>
                   
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-gray-600 leading-relaxed arabic-text">
                     {t(`represent.${item.key}.description`)}
                   </p>
                 </div>

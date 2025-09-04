@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,6 +15,38 @@
 
   body {
     font-family: 'Poppins', sans-serif;
+  }
+
+  /* Arabic font styling */
+  [dir="rtl"] {
+    font-family: 'Cairo', 'Tajawal', 'Amiri', sans-serif;
+  }
+
+  /* Arabic text improvements */
+  [dir="rtl"] .arabic-text {
+    font-family: 'Cairo', 'Tajawal', 'Amiri', sans-serif;
+    line-height: 1.8;
+    letter-spacing: 0.02em;
+  }
+
+  /* Center shorter lines relative to longer ones */
+  .arabic-balanced-text {
+    text-align: center;
+  }
+
+  [dir="rtl"] .arabic-balanced-text {
+    text-align: center;
+  }
+
+  /* Improved spacing for Arabic text */
+  [dir="rtl"] p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+  }
+
+  [dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3, [dir="rtl"] h4, [dir="rtl"] h5, [dir="rtl"] h6 {
+    line-height: 1.4;
+    margin-bottom: 1rem;
   }
 
   .emdad-navy { background-color: hsl(var(--emdad-navy)); }
@@ -35,6 +70,44 @@
 
 /* RTL Support */
 [dir="rtl"] { direction: rtl; }
-[dir="rtl"] .flex:not(.flex-col) { flex-direction: row-reverse; }
-[dir="rtl"] .text-left { text-align: right; }
-[dir="rtl"] .text-right { text-align: left; }
+
+/* RTL Layout adjustments */
+[dir="rtl"] .rtl-flex-reverse { flex-direction: row-reverse; }
+[dir="rtl"] .rtl-text-right { text-align: right; }
+[dir="rtl"] .rtl-text-left { text-align: left; }
+[dir="rtl"] .rtl-text-center { text-align: center; }
+
+/* Timeline specific RTL support */
+[dir="rtl"] .timeline-item-left {
+  text-align: left;
+  padding-left: 2rem;
+  padding-right: 0;
+}
+
+[dir="rtl"] .timeline-item-right {
+  text-align: right;
+  padding-right: 2rem;
+  padding-left: 0;
+}
+
+[dir="ltr"] .timeline-item-left {
+  text-align: right;
+  padding-right: 2rem;
+  padding-left: 0;
+}
+
+[dir="ltr"] .timeline-item-right {
+  text-align: left;
+  padding-left: 2rem;
+  padding-right: 0;
+}
+
+/* Responsive timeline adjustments */
+@media (max-width: 768px) {
+  .timeline-item-left,
+  .timeline-item-right {
+    text-align: center !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}

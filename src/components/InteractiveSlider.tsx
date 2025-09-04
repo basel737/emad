@@ -82,10 +82,10 @@ export function InteractiveSlider() {
             >
               <div className="absolute inset-0 bg-[#1F3B73] bg-opacity-70 flex items-center justify-center">
                 <div className="text-center max-w-3xl px-6">
-                  <h2 className="text-4xl md:text-5xl font-bold text-emdad-gold mb-6">
+                  <h2 className="text-4xl md:text-5xl font-bold text-emdad-gold mb-6 arabic-text">
                     {t(`slider.${sliderData[activeIndex].key}`)}
                   </h2>
-                  <p className="text-xl text-white leading-relaxed mb-8">
+                  <p className="text-xl text-white leading-relaxed mb-8 arabic-text">
                     {t(`slider.${sliderData[activeIndex].key}.description`)}
                   </p>
                   <Button
@@ -134,7 +134,7 @@ export function InteractiveSlider() {
                 <span
                   className={`text-sm font-medium whitespace-nowrap ${
                     index === activeIndex ? "text-emdad-gold" : "text-gray-600"
-                  }`}
+                  } arabic-text`}
                 >
                   {t(`slider.${item.key}`)}
                 </span>

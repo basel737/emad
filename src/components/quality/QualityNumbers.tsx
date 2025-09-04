@@ -142,7 +142,7 @@ export function QualityNumbers() {
             {t('quality.numbers.title')}
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-emdad-gold to-yellow-500 mx-auto mb-6" />
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-gray-300 text-lg max-w-2xl mx-auto leading-relaxed arabic-text">
             أرقام موثقة تعكس التزامنا بالتميز والجودة في قطاع النقل والخدمات اللوجستية - البيانات للعام 2024
           </p>
         </div>
@@ -180,7 +180,7 @@ export function QualityNumbers() {
                 </div>
 
                 {/* Label */}
-                <p className="text-gray-300 text-base font-medium leading-relaxed group-hover:text-white transition-colors duration-300">
+                <p className="text-gray-300 text-base font-medium leading-relaxed group-hover:text-white transition-colors duration-300 arabic-text">
                   {stat.label}
                 </p>
 
@@ -195,7 +195,7 @@ export function QualityNumbers() {
         <div className="mt-16 text-center">
           <div className="inline-flex items-center space-x-2 text-gray-400 text-sm">
             <div className="w-2 h-2 bg-emdad-gold rounded-full animate-pulse" />
-            <span>بيانات محدثة للعام 2024</span>
+            <span className="arabic-text">بيانات محدثة للعام 2024</span>
             <div className="w-2 h-2 bg-emdad-gold rounded-full animate-pulse" />
           </div>
         </div>

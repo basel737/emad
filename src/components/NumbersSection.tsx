@@ -9,11 +9,11 @@ export function NumbersSection() {
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in-up">
-              <h2 className="text-4xl md:text-5xl font-bold text-emdad-navy mb-8">
+              <h2 className="text-4xl md:text-5xl font-bold text-emdad-navy mb-8 arabic-text">
                 {t("numbers.title")}
               </h2>
 
-              <p className="text-xl text-gray-700 leading-relaxed">
+              <p className="text-xl text-gray-700 leading-relaxed arabic-text">
                 {t("numbers.description")}
               </p>
 

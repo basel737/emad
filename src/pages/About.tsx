@@ -110,10 +110,10 @@ export default function About() {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-4xl md:text-5xl font-bold text-emdad-gold mb-8 animate-fade-in-up">
+                <h2 className="text-4xl md:text-5xl font-bold text-emdad-gold mb-8 animate-fade-in-up arabic-text">
                   {t('aboutPage.company.title')}
                 </h2>
-                <p className="text-lg text-gray-700 leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+                <p className="text-lg text-gray-700 leading-relaxed animate-fade-in-up arabic-text" style={{ animationDelay: '0.2s' }}>
                   {t('aboutPage.company.description')}
                 </p>
               </div>
@@ -138,10 +138,10 @@ export default function About() {
                 <Card key={index} className="p-8 text-center hover:shadow-lg transition-shadow duration-300 animate-fade-in-up" style={{ animationDelay: `${index * 0.2}s` }}>
                   <CardContent className="pt-6">
                     <item.icon className="w-16 h-16 text-emdad-gold mx-auto mb-6" />
-                    <h3 className="text-2xl font-bold text-emdad-gold mb-4">
+                    <h3 className="text-2xl font-bold text-emdad-gold mb-4 arabic-text">
                       {item.title}
                     </h3>
-                    <p className="text-gray-700 leading-relaxed">
+                    <p className="text-gray-700 leading-relaxed arabic-text">
                       {item.description}
                     </p>
                   </CardContent>
@@ -161,19 +161,32 @@ export default function About() {
             </h2>
             
             {/* Timeline */}
-            <div className="relative mb-16">
+            <div className="relative mb-16 hidden md:block">
               <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-emdad-gold"></div>
               
               {timelineEvents.map((event, index) => (
                 <div key={index} className={`flex items-center mb-8 ${index % 2 === 0 ? 'justify-start' : 'justify-end'} animate-fade-in-up`} style={{ animationDelay: `${index * 0.2}s` }}>
-                  <div className={`w-5/12 ${index % 2 === 0 ? 'text-right pr-8' : 'text-left pl-8'}`}>
+                  <div className={`w-5/12 ${index % 2 === 0 ? 'timeline-item-left' : 'timeline-item-right'}`}>
                     <div className="bg-white p-6 rounded-lg shadow-lg">
-                      <div className="text-emdad-gold font-bold text-lg mb-2">{event.year}</div>
-                      <h3 className="text-emdad-navy font-semibold mb-2">{event.title}</h3>
-                      <p className="text-gray-600">{event.description}</p>
+                      <div className="text-emdad-gold font-bold text-lg mb-2 arabic-balanced-text">{event.year}</div>
+                      <h3 className="text-emdad-navy font-semibold mb-2 arabic-text">{event.title}</h3>
+                      <p className="text-gray-600 arabic-text leading-relaxed">{event.description}</p>
                     </div>
                   </div>
                   <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-emdad-gold rounded-full"></div>
+                </div>
+              ))}
+            </div>
+
+            {/* Mobile Timeline */}
+            <div className="md:hidden mb-16">
+              {timelineEvents.map((event, index) => (
+                <div key={index} className="mb-8 animate-fade-in-up" style={{ animationDelay: `${index * 0.2}s` }}>
+                  <div className="bg-white p-6 rounded-lg shadow-lg">
+                    <div className="text-emdad-gold font-bold text-lg mb-2 text-center arabic-balanced-text">{event.year}</div>
+                    <h3 className="text-emdad-navy font-semibold mb-2 text-center arabic-text">{event.title}</h3>
+                    <p className="text-gray-600 arabic-text leading-relaxed text-center">{event.description}</p>
+                  </div>
                 </div>
               ))}
             </div>
@@ -184,7 +197,7 @@ export default function About() {
                 <Card key={index} className="bg-white p-6 text-center hover:shadow-lg transition-shadow duration-300 animate-fade-in-up" style={{ animationDelay: `${(index + 3) * 0.2}s` }}>
                   <CardContent className="pt-4">
                     <CheckCircle className="w-12 h-12 text-emdad-gold mx-auto mb-4" />
-                    <p className="text-gray-700 font-medium">{partnership}</p>
+                    <p className="text-gray-700 font-medium arabic-text leading-relaxed">{partnership}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -206,10 +219,10 @@ export default function About() {
                 <Card key={index} className="text-center p-6 hover:shadow-lg transition-shadow duration-300 animate-fade-in-up" style={{ animationDelay: `${index * 0.2}s` }}>
                   <CardContent className="pt-6">
                     <item.icon className="w-12 h-12 text-emdad-gold mx-auto mb-4" />
-                    <h3 className="text-xl font-bold text-emdad-navy mb-3">
+                    <h3 className="text-xl font-bold text-emdad-navy mb-3 arabic-text">
                       {item.title}
                     </h3>
-                    <p className="text-gray-600 text-sm leading-relaxed">
+                    <p className="text-gray-600 text-sm leading-relaxed arabic-text">
                       {item.description}
                     </p>
                   </CardContent>

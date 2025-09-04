@@ -39,7 +39,7 @@ export function Footer() {
 
                 </div>
                 
-                <p className={`text-gray-300 leading-relaxed mb-6 ${language === 'ar' ? 'text-center md:text-right' : ''}`}>
+                <p className={`text-gray-300 leading-relaxed mb-6 arabic-text ${language === 'ar' ? 'text-center md:text-right' : ''}`}>
                   {t('footer.description')}
                 </p>
                 

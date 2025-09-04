@@ -23,15 +23,15 @@ export function HeroSection() {
 
       {/* Hero Content */}
       <div className="relative z-10 text-center max-w-3xl mx-auto px-6 py-10">
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 bg-gradient-to-r from-emdad-gold via-yellow-400 to-emdad-gold bg-clip-text text-transparent animate-pulse">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 bg-gradient-to-r from-emdad-gold via-yellow-400 to-emdad-gold bg-clip-text text-transparent animate-pulse arabic-text">
           {t('hero.title')}
         </h1>
 
-        <p className="text-lg md:text-xl text-white/80 mb-3 animate-fade-in-up">
+        <p className="text-lg md:text-xl text-white/80 mb-3 animate-fade-in-up arabic-text arabic-balanced-text">
           {t('hero.company')}
         </p>
 
-        <p className="text-xl md:text-2xl text-white leading-relaxed mb-8 animate-fade-in-up">
+        <p className="text-xl md:text-2xl text-white leading-relaxed mb-8 animate-fade-in-up arabic-text">
           {t('hero.subtitle')}
         </p>
 

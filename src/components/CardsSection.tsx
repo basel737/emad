@@ -67,11 +67,11 @@ export function CardsSection() {
                 </CardHeader>
                 
                 <CardContent className="p-6">
-                  <CardTitle className="text-emdad-gold text-xl font-bold mb-3">
+                  <CardTitle className="text-emdad-gold text-xl font-bold mb-3 arabic-text">
                     {t(`cards.${card.key}.title`)}
                   </CardTitle>
                   
-                  <CardDescription className="text-white text-base leading-relaxed mb-6">
+                  <CardDescription className="text-white text-base leading-relaxed mb-6 arabic-text">
                     {t(`cards.${card.key}.description`)}
                   </CardDescription>
                   
